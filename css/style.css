@@ -1,0 +1,271 @@
+main {
+    display: block;
+}
+
+.prodycate {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url(../img/backroundfcharm.png);
+    background-repeat: repeat;
+    background-size: 256px 256px;
+    background-position: top left;
+    padding: 0 16px;
+}
+
+.containerheader {
+    max-width: 1200px;
+    margin: 12px auto;
+    padding: 1% 2%;
+    background: #c9c4c4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 65px;
+    display: block;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.containerheader nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barranav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 0% 3%;
+
+}
+
+.busqueda button {
+    height: 34px;
+    padding: 0 14px;
+    border-radius: 10px;
+    background: white;
+    font-size: small;
+    margin-right: 310px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.busqueda input {
+    border-radius: 10px;
+    margin-right: 2%;
+}
+
+
+.barranav li {
+    list-style-type: none;
+}
+
+.barranav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+    padding-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.producto img {
+    height: 130px;
+    border-radius: 10px;
+}
+
+.producto {
+    background-color: rgb(234, 195, 202);
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+
+.containerproductos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 91%;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 0 0% 3% 2%;
+    padding-right: 0;
+}
+
+.containerproductos p {
+    margin-left: 5%;
+}
+
+.titulomv {
+    width: 860px;
+    margin-left: 2%;
+}
+
+.verdetalle {
+    background-color: rgb(208, 130, 144);
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: x-small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tituloprod {
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.productos p {
+    padding-left: 10px;
+}
+
+.titulo {
+    background-color: silver;
+    padding: 3px 0px 0px 25px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulocat {
+    background-color: rgb(208, 130, 144);
+    padding: 3px 0px 0px 35px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
+    margin-left: 15%;
+}
+
+.portada img {
+    width: 49%;
+}
+
+.portada a {
+    margin-left: 1%;
+
+}
+
+.categorias {
+    width: 50%;
+    background-color: rgb(234, 195, 202);
+    margin-top: 2%;
+    border-radius: 20px;
+    height: 80%;
+    margin-bottom: 0%;
+}
+
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.derecha a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5% 0 0% 0%;
+    text-decoration: none;
+    color: black;
+}
+.nombres{
+    background-color:rgb(234, 195, 202) ;
+    margin-left: 150px;
+    width: 100%;
+    padding: 4%;
+    border-radius: 10px
+}
+
+.categorias .titulo {
+    width: 45%;
+    margin-left: 7%;
+    padding: 2% 20% 2% 19%;
+}
+
+.categorias li{
+    margin-bottom: 2%;
+}
+
+.titulopr {
+    width: 96%;
+    margin-left: 2%;
+}
+
+.containerproductosa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 96%;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 0 0% 3% 2%;
+    padding: 1% 0 1% 1%;
+}
+
+.containerproductosa p {
+    margin-left: 5%;
+}
+
+.containerproductosa .producto {
+    margin-left: 2%;
+}
+
+.derecha li {
+    list-style-type: none;
+}
+
+.containerfooter {
+    max-width: 1200px;
+    margin: 12px auto;
+    padding: 1% 2%;
+    background: #bec1c1;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+    display: flex;
+}
+
+.containerfooter nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barrafooter li {
+    list-style-type: none;
+}
+
+.barrafooter a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+    padding-right: 50px;
+    margin-top: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.barrafooter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.prueba{
+    display: flex;
+    width: 100%;
+}
+
