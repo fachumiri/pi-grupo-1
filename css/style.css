@@ -268,4 +268,37 @@ body {
     display: flex;
     width: 100%;
 }
+.productos-category{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 91%;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 0 0% 3% 2%;
+    padding-right: 0;
+    justify-content: flex-start;
+}
+.productos-category p{
+    margin-left: 5%;
+}
+.category-2{
+    width: 86%; 
+    margin-left: 7%;
+}
+.containerproductoscategory {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    background-color: silver;
+    border-radius: 20px;
+    margin: 0 0% 3% 2%;
+    padding-right: 0;
+    margin-left: 7%;
+}
+.containerproductoscategory p{
+    margin-left: 5%;
+}
+
 
