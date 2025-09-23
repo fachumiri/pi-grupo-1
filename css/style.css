@@ -20,11 +20,12 @@ body {
     max-width: 1200px;
     margin: 12px auto;
     padding: 1% 2%;
-    background: #c9c4c4;
+    background: rgb(234, 195, 202);
     border-radius: 20px;
     display: flex;
     align-items: center;
 }
+
 
 .logo img {
     height: 65px;
@@ -278,7 +279,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 120vh;
+    height: 120%;
 }
 .productos-category{
     display: flex;
@@ -358,7 +359,7 @@ body {
     display: flex;
     box-sizing: border-box;
     align-content: center;
-    margin-left: 490px;
+    margin-left: 30%;
 
 }
 .div-login{
@@ -406,7 +407,7 @@ body {
     margin-bottom: 30px;
 }
 .vuelta-home{
-    background-color: rgb(229, 107, 129);
+    background-color: rgb(208, 130, 144);
     color: black;
     text-decoration: none;
     font-weight: bold;
