@@ -467,5 +467,295 @@ main.resultados {
 .lista-resultados h3 {
   margin: 0;
 }
+body.detalle {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header.detalle {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+h1.detalle {
+  margin: 10px 0;
+}
+
+h2.detalle {
+    margin: 10px 0;
+}
+
+main.detalle {
+  padding: 20px;
+}
+
+.productos.detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto.detalle {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.producto.detalle img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.precio.detalle {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.boton.detalle {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.detalle-producto {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.review {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.footer.detalle {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 420px) {
+
+  body {
+    padding: 0 8px;
+  }
+
+
+  .containerheader {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1% 2%;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .barranav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .barranav li {
+    padding: 5px 0;
+  }
+
+  .busqueda {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .busqueda input {
+    width: 70%;
+    margin-right: 5%;
+  }
+
+  .busqueda button {
+    margin-right: 0;
+    width: 25%;
+    font-size: small;
+  }
+
+ 
+  .portada img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+
+  .containerproductos, .containerproductosa {
+    width: 100%;
+    margin-left: 0;
+    padding: 1%;
+  }
+
+  .producto {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .producto img {
+    height: auto;
+    width: 100%;
+  }
+
+  .titulopr, .titulomv {
+    width: 100%;
+    margin-left: 0;
+  }
+
+ 
+  .categorias, .categorias-category {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .categorias .titulo, .categorias-category h3 {
+    padding: 5px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  
+  .containerfooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .barrafooter {
+    flex-direction: column;
+  }
+
+  .barrafooter li {
+    padding: 5px 0;
+  }
+
+  .nombres {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  body {
+    padding: 0 12px;
+  }
+
+  
+  .containerheader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .barranav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .busqueda {
+    width: 90%;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .busqueda input {
+    width: 65%;
+    margin-right: 5%;
+  }
+
+  .busqueda button {
+    width: 25%;
+    margin-right: 0;
+  }
+
+  
+  .portada img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Productos */
+  .containerproductos, .containerproductosa {
+    width: 95%;
+    margin-left: 0;
+    padding: 1%;
+  }
+
+  .producto {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .producto img {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulopr, .titulomv {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  /* Categorías */
+  .categorias, .categorias-category {
+    width: 95%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .categorias .titulo, .categorias-category h3 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  
+  .containerfooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barrafooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nombres {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
 
 
