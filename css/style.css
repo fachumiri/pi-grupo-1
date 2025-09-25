@@ -204,8 +204,17 @@ body {
     padding: 2% 20% 2% 19%;
 }
 
+.lista-categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 .categorias li{
     margin-bottom: 2%;
+    font-size: 1.5vw;
 }
 
 .titulopr {
@@ -552,12 +561,15 @@ main.detalle {
   padding: 15px;
 }
 
-@media screen and (max-width: 420px) {
+@media  (max-width: 420px) {
 
   body {
     padding: 0 8px;
   }
 
+ .navegacion{
+    width: 100%;
+ }
 
   .containerheader {
     flex-direction: column;
@@ -572,6 +584,7 @@ main.detalle {
   }
 
   .barranav {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
@@ -636,8 +649,21 @@ main.detalle {
     width: 100%;
     margin-left: 0;
   }
+  .derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.titulocat{
+    width: 80%;
+    margin-left: 0;
+}
 
-  
+  .categorias li{
+    margin-bottom: 2%;
+    font-size: 2vw;
+}
   .containerfooter {
     flex-direction: column;
     align-items: flex-start;
@@ -656,11 +682,15 @@ main.detalle {
     width: 100%;
     padding: 10px 0;
   }
-}
+
+  .detalle-producto img{
+    width: 80%;
+  }
 
 
 
-@media screen and (max-width: 768px) {
+
+@media   (max-width: 768px) {
 
   body {
     padding: 0 12px;
@@ -713,7 +743,7 @@ main.detalle {
   }
 
   .producto {
-    width: 48%;
+    width: 30%;
     margin: 1%;
   }
 
@@ -737,6 +767,12 @@ main.detalle {
   .categorias .titulo, .categorias-category h3 {
     width: 100%;
     margin-left: 0;
+  }
+
+  .titulocat {
+    width: 100%;
+    font-size: 3vw;
+    padding-left: 1%;
   }
 
   
