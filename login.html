@@ -23,9 +23,9 @@
                 </a>
             </article>
             <article class="barranav">
-                        <form class="busqueda" action="results.html" method="get">
+                        <form class="busqueda" action="./search.html" method="get">
                             <input id="busqueda" name="busqueda" type="search" placeholder="Buscar productos">
-                            <button type="submit"><a href="./search.html">Buscar</button></a>
+                            <button type="submit">Buscar</button>
                         </form>
             </article>
             <nav class="navegacion">
@@ -39,7 +39,7 @@
         </section>
     </header>
         <h2 class="bienvenida">BIENVENIDO</h2>
-        <section class="sec-login">
+        <form action="./home.html" method="get" class="form-login">
             <div class="div-login">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Email">
@@ -48,13 +48,14 @@
             <div class="div-login">
                 <label for="contra">Contraseña</label>
                 <input type="password" name="contra" placeholder="Contraseña">
-                <label class="sec-login-label" for="email">Obligatorio.</label>
+                <label class="sec-login-label" for="contra">Obligatorio.</label>
             </div>
             <div class="div-login-2">
                 <input type="checkbox" name="recordarme"><span>Recordarme</span>
             </div>
             <a href="./register.html" class="form-registro">No tengo cuenta</a>
-            <a href="index.html" class="vuelta-home">Ingresar</a>
+            <button class="vuelta-home" type="submit" >Ingresar</button>
         </section>
+        </form>
 </body>
 </html>
