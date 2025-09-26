@@ -16,6 +16,7 @@ body {
     padding: 0 16px;
 }
 
+
 .containerheader {
     max-width: 1200px;
     margin: 12px auto;
@@ -163,11 +164,10 @@ body {
 
 .titulocat {
     background-color: rgb(208, 130, 144);
-    padding: 3px 0px 0px 35px;
+    padding: 3px 0px 0px 0px;
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 60%;
-    margin-left: 15%;
+    width: fit-content;
     
 }
 
@@ -193,6 +193,7 @@ body {
 .derecha {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .derecha a {
@@ -366,14 +367,13 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    margin: 2% 7%;
+    margin: 2% 6%;
     color: rgb(0, 0, 0);
     display: flex;
     background-color: silver;
     padding: 3px 0px 0px 25px;
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 .form-login{
     flex-direction: column;
@@ -385,7 +385,7 @@ body {
     display: flex;
     box-sizing: border-box;
     align-content: center;
-    margin-left: 30%;
+    margin-left: 33%;
 
 }
 .div-login{
@@ -705,6 +705,9 @@ main.detalle {
 
   .detalle-producto img{
     width: 80%;
+  }
+  .form-login{
+    margin: 0;
   }
 }
 
