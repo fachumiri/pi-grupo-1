@@ -709,6 +709,11 @@ main.detalle {
   .form-login{
     margin: 0;
   }
+
+  .derecha {
+    width: 90px;
+  }
+
 }
 
 
