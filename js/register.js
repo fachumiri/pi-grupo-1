@@ -7,24 +7,25 @@ let inputcheck = document.querySelector (".inputRcheck")
 formularioreg.addEventListener("submit",function (e){
     e.preventDefault() // prevenir un comportamiento por defecto
     //recupero los valores de los campos del form 
-   let email = this.inputemail.value;
-   let password = this.inputcontra.value;
-   let repe = this.inputrepe.value;
-   let check = this.inputcheck.value;
+   let email = inputemail.value;
+   let password = inputcontra.value;
+   let repe = inputrepe.value;
+   let check = inputcheck.checked;
 
-   if (email === 0 || password === 0) {
+   if (email === "" || password === "") {
     alert("Debe completar los campos")
-   }else if (email === 0) {
+   }else if (email === "") {
     alert ("Debe completar el campo Email")
-   }else if (password === 0) {
+   }else if (password === "") {
     alert ("Debe completar el campo Contraseña")
-   }else if (password.length > 0 && password < 6){
+   }else if (password.length > 0 && password.length < 6){
     alert("La contraseña debe tener al menos 6 caracteres")
    }else if (password !== repe) {
     alert("Las contraseñas no coinciden")
-   }
-   else{
+   }else if (!check){
+        alert("Debe aceptar los términos y condiciones");
+   }else{
 
    }
 })
-//Redirigir al login 
+//Redirigir al login
