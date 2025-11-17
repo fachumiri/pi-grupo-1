@@ -70,4 +70,9 @@ fetch(urlCat2)
     })
     .catch(function(error){
         console.log("Error categoría 2: " + error);
-    });
+    })
+//el form redirige al home, damos mensaje aca
+
+
+
+
