@@ -1,4 +1,4 @@
-// URLs de las categorías elegidas
+// URLs de las cat
 let urlCat1 = "https://dummyjson.com/products/category/smartphones";
 let urlCat2 = "https://dummyjson.com/products/category/laptops";
 
@@ -22,7 +22,7 @@ fetch(urlCat1)
                     <img src="${productos[i].thumbnail}">
                     <h3>${productos[i].title}</h3>
                     <p>${productos[i].description}</p>
-                    <p class="precio">Precio: $${productos[i].price}</p>
+                    <p class="precio">$${productos[i].price}</p>
                     
                     <a class="boton" href="detalle.html?id=${productos[i].id}">
                         Ver detalle
@@ -57,7 +57,7 @@ fetch(urlCat2)
                     <img src="${productos[i].thumbnail}">
                     <h3>${productos[i].title}</h3>
                     <p>${productos[i].description}</p>
-                    <p class="precio">Precio: $${productos[i].price}</p>
+                    <p class="precio">$${productos[i].price}</p>
                     
                     <a class="boton" href="detalle.html?id=${productos[i].id}">
                         Ver detalle
@@ -71,7 +71,7 @@ fetch(urlCat2)
     .catch(function(error){
         console.log("Error categoría 2: " + error);
     })
-//el form redirige al home, damos mensaje aca
+
 
 
 

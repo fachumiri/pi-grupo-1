@@ -1,5 +1,6 @@
 main {
   display: block;
+  padding: 0%;
 }
 
 .prodycate {
@@ -111,7 +112,7 @@ body {
 }
 
 
-.containerproductos {
+.containerproductos{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -198,6 +199,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80%;
 }
 
 .derecha a {
@@ -231,13 +233,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  margin-right: 30%;
+  margin-left: 30%;
+
 }
 
 .categorias li {
   margin-bottom: 2%;
   font-size: 1.5vw;
+  margin-left: 10%;
+  margin-right: 45%;
 }
 
 .titulopr {
@@ -245,16 +250,17 @@ body {
   margin-left: 7%;
 }
 
-.containerproductosa {
+.containerproductos {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 90%;
+  width: 78%;
   background-color: silver;
   border-radius: 20px;
   margin-left: 7%;
   padding: 1% 0 1% 1%;
 }
+
 
 .containerproductosa p {
   margin-left: 5%;
@@ -607,6 +613,68 @@ main.detalle {
   text-align: center;
   padding: 15px;
 }
+
+/* nuevas pags */
+
+.prodycate-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.containerproductoscategory {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.item {
+    width: 200px; 
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  
+}
+
+.item img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.categorias-category {
+    width: 250px;
+    padding: 20px;
+    background-color: #e9b3c0;
+    border-radius: 18px;
+}
+
+.lista-categorias li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.lista-categorias a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #e9b3c0; 
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
 
 @media (max-width: 420px) {
 
