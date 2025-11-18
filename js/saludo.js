@@ -8,9 +8,10 @@ let homeLogout = document.querySelector(".logout");
 
 //el email usuario sale del nombre guardado en LS
 let data = localStorage.getItem("emailUsuario") 
+console.log(data)
 
 //solo entra si data contiene un string. Si LS fue limpiado con logout, entonces NO entra
-if (data) {
+if (data != "") {
     //Mostrar saludo + logout
     //homeBienvenida.innerText = `Bienvenido: ${data}`;
     homeBienvenida.style.display = "inline-block";

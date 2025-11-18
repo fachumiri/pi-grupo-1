@@ -7,7 +7,7 @@ let homeLogout = document.querySelector("#logout");
 // EVENTO DEL LOGOUT
 homeLogout.addEventListener("click", function(e) {
     e.preventDefault();
-
+    
     // eliminar dato del LS
     localStorage.removeItem("emailUsuario");
 
