@@ -1,24 +1,29 @@
-// Recuperar elementos
-let homeReg = document.querySelector(".Reg");
-let homeLog = document.querySelector(".Log");
-let homeBienvenida = document.querySelector(".Bien");
-let homeLogout = document.querySelector("#logout");
+// recuperar elementos del DOM
+let logoutReg = document.querySelector(".Reg");      // <li> Registro
+let logoutLog = document.querySelector(".Log");      // <li> Login
+let logoutBienvenida = document.querySelector(".Bien"); // <li> Bienvenido
+let logoutli = document.querySelector(".Logout"); // <li> Logout
+let logoutEnlace = document.querySelector("#enlace-logout"); // <a> Logout
 
-// EVENTO DEL LOGOUT
-homeLogout.addEventListener("click", function(e) {
-    e.preventDefault();
-    
-    // eliminar dato del LS
-    localStorage.removeItem("emailUsuario");
+// si el enlace existe (solo en páginas donde hay logout)
+if (logoutEnlace) {
+//usamos los if para ver si existen los elementos 
+    logoutEnlace.addEventListener("click", function(e) {
+// click para que cuando se ejecute el click se cumpla todo lo de abajo 
+        e.preventDefault();
 
-    // ocultar saludo y logout
-    homeBienvenida.style.display = "none";
-    homeLogout.style.display = "none";
+        // borrar LS
+        localStorage.removeItem("emailUsuario");
 
-    // mostrar login y registro
-    homeLog.style.display = "inline-block";
-    homeReg.style.display = "inline-block";
+        // ocultar saludo y logout
+        if (logoutBienvenida) logoutBienvenida.style.display = "none";
+        if (logoutli) logoutli.style.display = "none";
 
-    //refrescar para que saludo.js no vuelva a ejecutarse
-    window.location.reload();
-});
+        // mostrar login y registro
+        if (logoutLog) logoutLog.style.display = "inline-block";
+        if (logoutReg) logoutReg.style.display = "inline-block";
+
+        console.log("Logout ejecutado correctamente");
+    });
+
+}

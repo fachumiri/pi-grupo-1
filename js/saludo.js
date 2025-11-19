@@ -1,31 +1,29 @@
-// recuperar elemento del DOM: login, registro y lista
 let homeReg = document.querySelector(".Reg");
 let homeLog = document.querySelector(".Log");
 let homeBienvenida = document.querySelector(".Bien");
-let homeLogout = document.querySelector(".logout");
+let homeLogout = document.querySelector(".Logout");
 
 
+// obtener email del LS
+let data = localStorage.getItem("emailUsuario");
 
-//el email usuario sale del nombre guardado en LS
-let data = localStorage.getItem("emailUsuario") 
-console.log(data)
+// solo entra si existe un mail real
+if (data !== null && data !== "") {
+//necesitamos que se fije a ver si existen cada uno de los elementos existen 
+    if (homeBienvenida) {
+        homeBienvenida.style.display = "inline-block";
+        homeBienvenida.innerText = `Bienvenido: ${data}`;
+    }
 
-//solo entra si data contiene un string. Si LS fue limpiado con logout, entonces NO entra
-if (data != "") {
-    //Mostrar saludo + logout
-    //homeBienvenida.innerText = `Bienvenido: ${data}`;
-    homeBienvenida.style.display = "inline-block";
-    homeBienvenida.innerText = `Bienvenido: ${data}`;
+    if (homeLogout) {
+        homeLogout.style.display = "inline-block";
+    }
 
-    // Mostrar logout
-    homeLogout.style.display = "inline-block";
+    if (homeLog) {
+        homeLog.style.display = "none";
+    }
 
-    // Ocultar login y registro
-    homeLog.style.display = "none";
-    homeReg.style.display = "none";
-
-
-
-} else {
-   // alert ("No se pudo guardar los datos correctamente")
+    if (homeReg) {
+        homeReg.style.display = "none";
+    }
 }
