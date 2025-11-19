@@ -1,18 +1,18 @@
 
-// 1. CAPTURAR QUERYSTRING
+
 let queryString = location.search; 
 let qs = new URLSearchParams(queryString);
 let categoria = qs.get("cat");  
 
 console.log("Categoría seleccionada:", categoria);
 
-// 2. ARMAR URL DE LA API
+
 let url = `https://dummyjson.com/products/category/${categoria}`;
 
-// 3. CAPTURAR CONTENEDOR DEL HTML
+
 let contenedor = document.querySelector(".listaCat1");
 
-// 4. FETCH A LA API
+
 fetch(url)
     .then(function(response){
         return response.json();
@@ -20,7 +20,7 @@ fetch(url)
     .then(function(data){
         console.log(data);
 
-        let productos = data.products;  // array de productos
+        let productos = data.products;  
 
         for(let i = 0; i < productos.length; i++){
             let item = `

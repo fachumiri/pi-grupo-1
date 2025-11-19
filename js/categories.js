@@ -1,4 +1,4 @@
-// CARGAR BARRA DE CATEGORÍAS EN EL HOME Y EN CATEGORY.HTML
+
 
 let urlCategorias = "https://dummyjson.com/products/category-list";
 
