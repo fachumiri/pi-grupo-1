@@ -45,7 +45,7 @@ fetch(URL_SEARCH)
         let producto = data.products[i];
 
         contenido += `
-            <article class="item">
+            <article class="item-search">
                 <img src="${producto.thumbnail}">
                 <h3>${producto.title}</h3>
                 <p class="precio">$${producto.price}</p>
