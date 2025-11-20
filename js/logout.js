@@ -23,7 +23,6 @@ if (logoutEnlace) {
         if (logoutLog) logoutLog.style.display = "inline-block";
         if (logoutReg) logoutReg.style.display = "inline-block";
 
-        console.log("Logout ejecutado correctamente");
     });
 
 }
