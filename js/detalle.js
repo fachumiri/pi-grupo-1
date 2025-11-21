@@ -48,6 +48,7 @@ fetch(urlId)
 
             contenido += `
               <div class="review">
+                <h5>Reseña:</h5>
                 <p><strong> ${review.reviewerName} — ${review.date} </strong></p>
                 <p>${review.rating}/5</p>
                 <p>${review.comment}</p>
