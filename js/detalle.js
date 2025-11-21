@@ -38,6 +38,54 @@ fetch(urlId)
 
     
     //falta reseña
+
+    // 1. Recuperar ID del producto desde el QS
+let qs = location.search;
+let qsObj = new URLSearchParams(qs);
+let productId = qsObj.get("id");
+
+console.log("Producto ID:", productId);
+
+// 2. URL de reviews del producto
+let urlReviews = "⁠https://dummyjson.com/comments/post/${productId}"
+
+// 3. Capturar contenedor
+let contenedorReviews = document.querySelector(".lista-reviews");
+
+// 4. Fetch para reviews
+fetch(urlReviews)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log("Reviews:", data);
+
+        let comentarios = data.comments;
+        let html = "";
+
+        if(comentarios.length === 0){
+            html = "<p>No hay reviews para este producto.</p>";
+        }
+
+        for(let i = 0; i < comentarios.length; i++){
+            let rev = comentarios[i];
+
+            html += `
+                <article class="review">
+                    <p>Rating: ${rev.rating}</p>
+                    <p>Comentario: ${rev.body}</p>
+                    <p>Fecha: ${rev.date}</p>
+                    <p>Usuario: ${rev.user.username}</p>
+                </article>
+            
+            `;
+        }
+
+        contenedorReviews.innerHTML = html;
+    })
+    .catch(function(error){
+        console.log("Error en reviews:", error);
+    });
        
     })
     .catch(function(error){
